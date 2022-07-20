@@ -16,7 +16,7 @@ function Bodycomponent() {
   const [amountTOBridge,setAmountToBridge] = useState(0);
  
   const copyContractAddress = ()=>{
-    navigator.clipboard.writeText('0xE410f3C538aaCB1b1aFfb5f6f419498D122E71d4');
+    navigator.clipboard.writeText('0xF4E0f2B46Ef9AecF74d97039F9d84bbd55eDF955');
   }
   const bridgeToken = async()=>{
     if(walletctx.accounts.length === 0){
@@ -76,7 +76,7 @@ function Bodycomponent() {
               <Text fontSize={['0.6em','0.8em','1em','1.2em']} fontWeight='bold'>EXPECTING: {amountTOBridge && amountTOBridge + ' NeatBNB'}</Text>
               {/* <Text fontSize='1.2em' fontWeight='bold'>Balance:</Text> */}
               <Box display='flex' gap={['0','3','4','5']} pl={['2','3','4','5']} pr={['2','3','4','5']}>
-                <Text fontSize={['0.5em','0.6em','1em','1.2em']} fontWeight='medium'>Contract Address: 0xE410f3C538aaCB1b1aFfb5f6f419498D122E71d4</Text>
+                <Text fontSize={['0.5em','0.6em','1em','1.2em']} fontWeight='medium'>Contract Address: 0xF4E0f2B46Ef9AecF74d97039F9d84bbd55eDF955</Text>
                 <IconButton onClick={copyContractAddress} icon={<CopyIcon />}/>
               </Box>
             </Box>
